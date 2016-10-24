@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body {
+	background-color: #FFF;
+}
+
+h2{
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: normal;
+
+}
+
+h3{
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: normal;
+
+}
+
+.form{
+	width: 225px;
+	margin-top: 14%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.form-header{
+	text-align: center;
+}
+
+.form-entry{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #BBB;
+	text-align: center;
+}
+
+.button{
+	margin-top: 10px;
+	text-align: center;
+}
