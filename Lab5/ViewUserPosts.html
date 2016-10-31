@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>View User Posts</title>
+    <link rel="stylesheet" href="user.css">
+    <!--script src="password.js"></script>-->
+</head>
+
+<body>
+	
+    <div class="container">
+    	<div class="form">
+        <form name="create" action="ViewUserPosts.php" method="post">
+          <div class="form-header"><h2>View User Posts</h2></div>
+          <div class="form-header"><h3>Select User</h3></div>
+          <div class="form-entry"><select id="users">
+            <?php
+							$mysqli = new mysqli("mysql.eecs.ku.edu", "ecoots", "ku16eecs", "ecoots");
+
+              /* check connection */
+              if ($mysqli->connect_errno) {
+                printf("Connect failed: %s\n", $mysqli->connect_error);
+                exit();
+              }
+
+              $users = "SELECT user_id FROM Users";
+
+              if ($result = $mysqli->query($users)) {
+
+                /* fetch associative array */
+                while ($row = $result->fetch_assoc()) {
+                    echo "<option value="$row['user_id']">" . $row["user_id"];
+                    echo "</option>";
+                }
+
+                /* free result set */
+                $result->free();
+              }
+
+              /* close connection */
+              $mysqli->close();
+          	?>
+          </select></div>
+          <div class="button"><input type="Submit" value="Get Posts"></div>
+        </form>
+      </div>
+    </div>
+
+</body>
+
+</html>
