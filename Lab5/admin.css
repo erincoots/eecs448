@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body {
+	background-color: #FFF;
+}
+
+h2{
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: normal;
+
+}
+
+h3{
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: normal;
+
+}
+
+.links{
+	width: 225px;
+	margin-top: 14%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.links-header{
+	text-align: center;
+}
+
+.button{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #BBB;
+	text-align: center;
+}
+a {
+	font-family: Verdana, Geneva, sans-serif;
+	color: #66F;
+	text-decoration: none;
+}
+a:visited {
+	color: #66F;
+}
+
+a:hover {
+	color: #69F;
+	text-decoration: none;
+}
+a:active {
+	color: #666;
+}
