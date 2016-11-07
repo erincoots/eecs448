@@ -43,7 +43,7 @@ void Test::runTests(){
 }
 
 void Test::printMessage(string test, int num, string description, bool passOrFail){
-  if(num == 0){
+  if(num != 0){
     if(num == 1){
       cout << test << ":\n";
     }
@@ -57,7 +57,7 @@ void Test::printMessage(string test, int num, string description, bool passOrFai
     }
   }
   else{
-    cout test << ": ";
+    cout << test << ": ";
     cout << description << ": ";
     if(passOfFail == true){
       cout << "Passed\n";
