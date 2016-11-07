@@ -49,7 +49,7 @@ void Test::printMessage(string test, int num, string description, bool passOrFai
     }
     cout << "\t" << num << ": ";
     cout << description << ": ";
-    if(passOrFail == true){
+    if(passOfFail == true){
       cout << "Passed\n";
     }
     else{
@@ -57,9 +57,9 @@ void Test::printMessage(string test, int num, string description, bool passOrFai
     }
   }
   else{
-    cout << test << ": ";
+    cout test << ": ";
     cout << description << ": ";
-    if(passOrFail == true){
+    if(passOfFail == true){
       cout << "Passed\n";
     }
     else{
