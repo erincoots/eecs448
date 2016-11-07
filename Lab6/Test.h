@@ -14,30 +14,33 @@
 class Test{
   public:
     void runTests();
-    void printMessage(testNum, description, passFail);
+    void printMessage(string test, int num, string description, bool passOrFail);
 
     //test isEmpty function
-    bool Test1();
+    void Test1a(); //true for empty list
+    void Test1b(); //false for occupied list
     //test size function
-    bool Test2a(); //size of empty list
-    bool Test2b(); //size of list after addFront
-    bool Test2c(); //size of list after addBack
-    bool Test2d(); //size of list after 2+ addFront
-    bool Test2e(); //size of list after 2+ addBack
-    bool Test2f(); //size of occupied list after removeFront
-    bool Test2g(); //size of occupied list after removeBack
+    void Test2a(); //size of empty list
+    void Test2b(); //size of list after addFront
+    void Test2c(); //size of list after addBack
+    void Test2d(); //size of list after 2+ addFront
+    void Test2e(); //size of list after 2+ addBack
+    void Test2f(); //size of occupied list after removeFront
+    void Test2g(); //size of occupied list after removeBack
     //test search function
-    bool Test3a(); //search of empty list
-    bool Test3b(); //search of list without value
-    bool Test3c(); //search of list with value
+    void Test3a(); //search of empty list
+    void Test3b(); //search of list without value
+    void Test3c(); //search of list with value
     //test addBack function
-    bool Test4();
+    void Test4(); //value added to end of list
     //test addFront function
-    bool Test5();
+    void Test5(); //value added to end of list
     //test removeBack function
-    bool Test6();
+    void Test6a(); //false for empty list
+    void Test6b(); //value removed from end of list
     //test removeFront function
-    bool Test7();
+    void Test7a(); //false for empty list
+    void Test7b(); //value removed from front of list
   private:
 };
 
