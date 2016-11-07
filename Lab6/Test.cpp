@@ -16,7 +16,7 @@ Test::Test(){}
 void Test::runTests(){
   cout << "\n-------------------\n";
   cout << "   RUNNING TESTS   ";
-  cout << "\n-------------------\n";
+  cout << "\n-------------------\n\n";
 
   Test1a();
   Test1b();
@@ -226,7 +226,7 @@ void Test::Test4(){
     list.addFront(i);
   }
   list.addFront(20);
-  list.removeFront();
+  list.removeBack();
   verdict = list.search(20) ? false : true;
 
   printMessage("addBack", 0 ,"value added to end of list", verdict);
@@ -241,7 +241,7 @@ void Test::Test5(){
     list.addFront(i);
   }
   list.addBack(20);
-  list.removeBack();
+  list.removeFront();
   verdict = list.search(20) ? false : true;
 
   printMessage("addFront", 0 ,"value added to front of list", verdict);
@@ -265,7 +265,7 @@ void Test::Test6b(){
   for(int i = 0; i < 10;i++){
     list.addFront(i);
   }
-  list.removeBack();
+  list.removeFront();
   verdict = list.search(9) ? false : true;
 
   printMessage("removeBack", 2 ,"value removed from end of list", verdict);
@@ -289,7 +289,7 @@ void Test::Test7b(){
   for(int i = 0; i < 10;i++){
     list.addFront(i);
   }
-  list.removeFront();
+  list.removeBack();
   verdict = list.search(0) ? false : true;
 
   printMessage("removeFront", 2 ,"value removed from front of list", verdict);
