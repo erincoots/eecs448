@@ -9,6 +9,7 @@
 #define TEST_H
 
 #include <iostream>
+#include <string>
 #include "LinkedListOfInts.h"
 
 class Test{
