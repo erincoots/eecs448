@@ -1,0 +1,9 @@
+Bugs -
+
+  isEmpty() - returns true, no matter the list occupancy
+
+  removeBack()  - does not remove any element of the list
+                - does not alter the list size
+
+  removeFront() - does not remove any element of the list
+                - does not alter the list size
