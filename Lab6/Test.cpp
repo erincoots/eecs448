@@ -9,7 +9,7 @@
 #include <string>
 #include "Test.h"
 
-namespace std;
+using namespace std;
 
 Test::Test(){}
 

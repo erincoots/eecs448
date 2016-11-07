@@ -12,6 +12,8 @@
 #include <string>
 #include "LinkedListOfInts.h"
 
+using namespace std;
+
 class Test{
   public:
     Test();
