@@ -16,7 +16,7 @@ Test::Test(){}
 void Test::runTests(){
   cout << "\n-------------------\n";
   cout << "   RUNNING TESTS   ";
-  cout << "\n-------------------\n\n";
+  cout << "\n-------------------\n";
 
   Test1a();
   Test1b();
@@ -45,7 +45,7 @@ void Test::runTests(){
 void Test::printMessage(string test, int num, string description, bool passOrFail){
   if(num != 0){
     if(num == 1){
-      cout << test << ":\n";
+      cout << "\n" << test << ":\n";
     }
     cout << "\t" << num << ": ";
     cout << description << ": ";
