@@ -42,7 +42,7 @@ void Test::runTests(){
   cout << "\n-------------------\n";
 }
 
-void Test::printMesssage(string test, int num, string description, bool passOrFail){
+void Test::printMessage(string test, int num, string description, bool passOrFail){
   if(num == 0){
     if(num == 1){
       cout << test << ":\n";
@@ -226,7 +226,7 @@ void Test::Test4(){
     list.addFront(i);
   }
   list.addFront(20);
-  list.removeFront(20);
+  list.removeFront();
   verdict = list.search(20) ? false : true;
 
   printMessage("addBack", 0 ,"value added to end of list", verdict);
@@ -241,7 +241,7 @@ void Test::Test5(){
     list.addFront(i);
   }
   list.addBack(20);
-  list.removeBack(20);
+  list.removeBack();
   verdict = list.search(20) ? false : true;
 
   printMessage("addFront", 0 ,"value added to front of list", verdict);
