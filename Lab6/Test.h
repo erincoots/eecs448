@@ -13,6 +13,7 @@
 
 class Test{
   public:
+    Test();
     void runTests();
     void printMessage(string test, int num, string description, bool passOrFail);
 

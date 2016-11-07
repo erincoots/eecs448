@@ -10,6 +10,8 @@
 
 namespace std;
 
+Test::Test(){}
+
 void Test::runTests(){
   cout << "\n-------------------\n";
   cout << "   RUNNING TESTS   ";
