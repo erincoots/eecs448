@@ -59,7 +59,7 @@ void Test::printMessage(string test, int num, string description, bool passOrFai
   else{
     cout << test << ": ";
     cout << description << ": ";
-    if(passOfrail == true){
+    if(passOrFail == true){
       cout << "Passed\n";
     }
     else{
